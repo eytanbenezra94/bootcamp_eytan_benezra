@@ -1,0 +1,8 @@
+class_materials/
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+.env
+.DS_Store
+
