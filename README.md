@@ -24,24 +24,29 @@
 **Stage:** Problem Framing & Scoping (Stage 01)
 
 ## Problem Statement
-<1-2 paragraphs: what problem you're solving and why it matters>
+Portfolio Manager picking which sector to invest into usually just with a good feeling. I want just a simple monthly ranking based on momentum so they have real numbers instead.
 
 ## Stakeholder & User
-<Who owns the decision? Who uses the output? Same person or different?>
+PM makes the call. I'd run the signal and give them the ranking.
 
 ## Useful Answer & Decision
-<Descriptive / Predictive / Causal? What metric or artifact will you deliver?>
+Predictive with ranked list of different sectors by momentum, updated monthly.
+
 
 ## Assumptions & Constraints
-- <e.g. data only available daily>
-- <e.g. latency, compliance constraints>
+- need daily price data, no gaps
+-  momentum probably doesn't stay more than a month 
 
 ## Known Unknowns / Risks
-- <e.g. survivorship bias risk, regime shift>
+- regime changes could break the pattern
+- sectors move together during a crash, ranking gets less useful
 
 ## Lifecycle Mapping
-Goal → Stage → Deliverable
-- <Goal A> → Problem Framing & Scoping (Stage 01) → <Deliverable X>
+- define problem → Stage 01 → this README
+- set up env → Stage 02 → repo, .env, requirements.txt
+- write code → Stage 03 → src/utils.py
+- pull data → Stage 04 → data/raw
+- store results → Stage 05 → data/processed
 
 ## Repo Plan
-data/, src/, notebooks/, docs/ inside project/ ; updated each session
+Everything lives in project/, updated each stage.
