@@ -50,3 +50,8 @@ Predictive with ranked list of different sectors by momentum, updated monthly.
 
 ## Repo Plan
 Everything lives in project/, updated each stage.
+
+
+## Data Storage (Stage 05)
+Raw files live in `data/raw/` (CSV), processed files in `data/processed/` (Parquet).
+Paths are env-driven via `DATA_DIR_RAW` / `DATA_DIR_PROCESSED` in `.env`, never hardcoded.
