@@ -55,3 +55,8 @@ Everything lives in project/, updated each stage.
 ## Data Storage (Stage 05)
 Raw files live in `data/raw/` (CSV), processed files in `data/processed/` (Parquet).
 Paths are env-driven via `DATA_DIR_RAW` / `DATA_DIR_PROCESSED` in `.env`, never hardcoded.
+
+## Data Preprocessing (Stage 06)
+Cleaning functions live in each homework's `src/cleaning.py`: median imputation for
+sparse-but-usable columns, dropping columns above a missing-value threshold, and
+min-max normalization. Applied to `data/raw/sample_data.csv`, saved to `data/processed/`.
