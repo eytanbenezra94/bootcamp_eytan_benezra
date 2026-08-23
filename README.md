@@ -60,3 +60,8 @@ Paths are env-driven via `DATA_DIR_RAW` / `DATA_DIR_PROCESSED` in `.env`, never 
 Cleaning functions live in each homework's `src/cleaning.py`: median imputation for
 sparse-but-usable columns, dropping columns above a missing-value threshold, and
 min-max normalization. Applied to `data/raw/sample_data.csv`, saved to `data/processed/`.
+
+
+## Exploratory Data Analysis (Stage 08)
+Profiled numeric and categorical columns, checked distributions and time-series
+behavior. Reusable `eda_summary()` helper lives in each homework's `src/eda.py`.
