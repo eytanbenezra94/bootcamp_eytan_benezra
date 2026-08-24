@@ -65,3 +65,7 @@ min-max normalization. Applied to `data/raw/sample_data.csv`, saved to `data/pro
 ## Exploratory Data Analysis (Stage 08)
 Profiled numeric and categorical columns, checked distributions and time-series
 behavior. Reusable `eda_summary()` helper lives in each homework's `src/eda.py`.
+
+## Feature Engineering (Stage 09)
+Three new features : spend/income ratio, log income to fix skew, and
+frequency-encoded region. Reusable versions are in each homework's `src/features.py`.
